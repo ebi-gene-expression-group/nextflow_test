@@ -17,7 +17,7 @@ process extract_number {
 
 process test_to_tsv {
 
-    publishDir "/nfs/production3/ma/home/jmanning/projects/scxa_worflows", mode: 'move', overwrite: true
+    publishDir "test", mode: 'move', overwrite: true
 
     input:
         set val(num), file(csvFile) from TEST_BY_NUM
