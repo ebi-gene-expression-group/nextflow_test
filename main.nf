@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-TEST = Channel.fromPath( "test*.csv" )
+TEST = Channel.fromPath( "${baseDir}/test*.csv" )
 
 process extract_number {
 
