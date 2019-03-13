@@ -11,7 +11,7 @@ process extract_number {
         set stdout, file (csvFile) into TEST_BY_NUM
 
     """
-       echo $csvFile | grep -o -E '[0-9]+' | tr '\\n' '\\0' 
+       echo $csvFile | grep -o -E '[0-9]+' | tr '\\n' '' 
     """
 }
 
